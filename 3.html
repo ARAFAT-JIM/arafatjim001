@@ -1,0 +1,1114 @@
+
+<style>
+    .home-notice-box {
+        background-image: url('frontend/ppimsc/image/notice.png');
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        padding: 100px 0;
+    }
+
+
+    .home-notice-content {
+        height: 370px;
+        background: #F2F2F2 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 10px;
+        margin-right: 50px;
+        padding: 17px;
+        overflow: hidden;
+    }
+
+    .home-notice-content marquee {
+        height: 370px;
+    }
+
+    .home-notice-content ul li {
+        display: inline-block;
+        height: 57px;
+        width: 100%;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #0000000f;
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    .home-notice-content ul li a .home-notice-year-box {
+        width: 14%;
+        float: left;
+        background: #005CAC 0% 0% no-repeat padding-box;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .home-notice-content ul li .home-notice-year-box {
+        width: 86%;
+        float: left;
+        padding-left: 20px;
+    }
+
+    .home-notice-content ul li .home-notice-year-box .home-notice-content-month {
+        font-size: 15px;
+        color: #fff;
+        display: block;
+    }
+
+    .home-notice-content ul li .home-notice-year-box .home-notice-content-date {
+        font-size: 18px;
+        color: #fff;
+        font-weight: 600;
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const gallery = document.querySelector(".image-gallery");
+        const images = gallery.children;
+
+        // Clone the gallery content for seamless looping
+        gallery.innerHTML += gallery.innerHTML;
+
+        // Calculate the animation duration dynamically
+        const totalWidth = images[0].offsetWidth * images.length;
+        gallery.style.width = `${totalWidth}px`;
+
+        // Adjust the animation speed based on content width
+        const animationDuration = totalWidth / 100; // Adjust speed as needed
+        gallery.style.animationDuration = `${animationDuration}s`;
+    });
+</script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Monipur Uchcha Vidyalaya and College</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&amp;display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.5/css/responsive.bootstrap4.min.css">
+
+
+
+    <!---Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!---Fonts-->
+    <!-- CSS only -->
+
+    <link rel="stylesheet" href="https://mubc.edu.bd/frontend/ppimsc/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://mubc.edu.bd/frontend/ppimsc/css/slick.css">
+    <link rel="stylesheet" href="https://mubc.edu.bd/frontend/ppimsc/css/venobox.css">
+    <link rel="stylesheet" href="https://mubc.edu.bd/frontend/ppimsc/css/style.css">
+    <link rel="stylesheet" href="https://mubc.edu.bd/frontend/ppimsc/css/media.css">
+
+</head>
+
+<body>
+
+ 
+
+
+        <!---Header TopBar-->
+	<section id="topHeader">
+		<div class="container">
+			<div class="row">
+				<div class="topInfo">
+					<ul>
+						<li><a href="mailto:monipur1969@yahoo.com" class="text-light"><img src="https://mubc.edu.bd/frontend/ppimsc/image/email-84.svg" alt=""> monipur1969@yahoo.com</a></li>
+						<li><a href="tel:" class="text-light"><img src="https://mubc.edu.bd/frontend/ppimsc/image/phone-2.svg" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="socialIconTop">
+					<ul>
+					                                        <li><a href="https://www.facebook.com/people/Monipur-Uchcha-Vidyalaya-College/100064901342101/?mibextid=ZbWKwL" target="_blank"><img src="https://mubc.edu.bd/frontend/ppimsc/image/fb.svg" alt=""></a></li>
+                                    	                                    	                                    	                                    	                                    						<li class="ParentsZone"><a target="_blank" href="http://175.29.164.190:8081/portal/">Parent's Zone</a></li>
+					<li class="ParentsZone"><a target="_blank" href="http://175.29.164.190:8081/">Teacher's Zone</a></li>
+					<li class="parentsZone"><a href="https://mubc.edu.bd/login">Admin Zone</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!---Header TopBar-->
+
+<header id="headerSticky" >
+		<!---logobar-->
+		<section id="logoPart">
+			<div class="schoolLogo">
+				<a href="https://mubc.edu.bd">
+										<div class="logo">
+						<img src="https://mubc.edu.bd//media/logos/NfCcLvqR0hbzj1hpHyLl9s97vYF9GUawQMih5GxN.jpg" alt="" height="80">
+					</div>
+										<div class="headerContent"><h3>Monipur Uchcha Vidyalaya and College</h3></div>
+									</a>
+			</div>
+		</section>
+		<!---logobar-->
+	
+	
+	
+		<!----------------navBar------------->
+		<nav id="menuBar" class="navbar navbar-expand-lg deskMenu "style="display: flex; justify-content: center;align-items: center;flex-direction:column;margin-top:-15px">
+			<div class="">
+				<!-- <a href="https://mubc.edu.bd">
+					<img src="https://mubc.edu.bd//media/logos/NfCcLvqR0hbzj1hpHyLl9s97vYF9GUawQMih5GxN.jpg" alt="" height="70">
+				</a> -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"><img src="https://mubc.edu.bd/frontend/ppimsc/image/ic_menu_24px.svg" alt=""></span>
+				</button>
+	
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="nav navbar-nav">
+													<li><a  href="https://mubc.edu.bd"  style="color: #000;">Home</a>
+															</li>
+													<li><a  style="color: #000;">About us</a>
+																<ul class="dropdowndesk">
+																			<li><a  href="https://mubc.edu.bd/at-a-glance">At a Glance</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/history-of-the-college">History of the College</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/message-of-the-chairman">Message of The Chairman</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/message-of-the-principal">Message of The Principal</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/governing-body">Governing Body</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/ex-chairman">Ex. Chairman</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/ex-principal">Ex. Principal</a>
+																					</li>	
+																	
+								</ul>
+															</li>
+													<li><a  style="color: #000;">Academic</a>
+																<ul class="dropdowndesk">
+																			<li><a  href="https://mubc.edu.bd/a">a</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/academic-rules">Academic Rules</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/our-teacher">Our Teacher</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/our-staff">Our Staff</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/attendence-information">Attendence Information</a>
+																					</li>	
+																	
+								</ul>
+															</li>
+													<li><a  style="color: #000;">Routine</a>
+																<ul class="dropdowndesk">
+																			<li><a  href="https://mubc.edu.bd/teacherRoutine">Teacher Routine</a>
+																					</li>	
+																	
+								</ul>
+															</li>
+													<li><a  style="color: #000;">Admission</a>
+																<ul class="dropdowndesk">
+																			<li><a  href="https://mubc.edu.bd/h">How To Apply</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/admission-circular">Admission Circular</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/admission-result">Admission Result</a>
+																					</li>	
+																	
+								</ul>
+															</li>
+													<li><a  style="color: #000;">Student</a>
+																<ul class="dropdowndesk">
+																			<li><a  href="https://mubc.edu.bd/tution-fess">Tuition Fees</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/our-student">Our Student</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/mobile-banking">Mobile Banking</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/daily-activities">Daily Activities</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/exam-shedule">Exam Shedule</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/student-uniform">Student Uniform</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/examination-system">Examination System</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/rules-and-regulation">Rules and Regulation</a>
+																					</li>	
+																	
+								</ul>
+															</li>
+													<li><a  style="color: #000;">Syllabus</a>
+																<ul class="dropdowndesk">
+																			<li><a  href="https://mubc.edu.bd/Bangla-Version">Bangla Version</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/English-Version">English Version</a>
+																					</li>	
+																	
+								</ul>
+															</li>
+													<li><a  style="color: #000;">Facilities</a>
+																<ul class="dropdowndesk">
+																			<li><a  href="https://mubc.edu.bd/library">Library</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/ict-lab">ICT Lab</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/play-ground">Play Ground</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/physics-lab">Physics Lab</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/chemistry-lab">Chemistry Lab</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/biology-lab">Biology Lab</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/geography-lab">Geography Lab</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/co-curricular-activity">Co-curricular Activity</a>
+																					</li>	
+																	
+								</ul>
+															</li>
+													<li><a  style="color: #000;">Results</a>
+																<ul class="dropdowndesk">
+																			<li><a  href="https://mubc.edu.bd/board-exam-result">Board Exam Result</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/pec-result">PEC Result</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/jsc-result">JSC Result</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/ssc-result">SSC Result</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/hsc-result">HSC Result</a>
+																					</li>	
+																	
+								</ul>
+															</li>
+													<li><a  style="color: #000;">Gallery</a>
+																<ul class="dropdowndesk">
+																			<li><a  href="https://mubc.edu.bd/photo-gallery">Photo Gallery</a>
+																					</li>	
+																			<li><a  href="https://mubc.edu.bd/video-gallary">Video Gallary</a>
+																					</li>	
+																	
+								</ul>
+															</li>
+													<li><a  href="https://mubc.edu.bd/contact"  style="color: #000;">Contact</a>
+															</li>
+													<li><a  href="https://mubc.edu.bd/notice"  style="color: #000;">Notice</a>
+															</li>
+													<li><a  href="https://mubc.edu.bd/a"  style="color: #000;">Online Admission</a>
+															</li>
+											</ul>
+				</div>
+			</div>
+		</nav>
+		<!----------------navBar------------->
+		<!----------------navBar------------->
+				<nav id="mobilbar" class="navbar navbar-expand-lg mobilMenu">
+					<div class="container">
+		
+						<a class="navbar-brand logoMobil" href="#"><img src="https://mubc.edu.bd//media/logos/NfCcLvqR0hbzj1hpHyLl9s97vYF9GUawQMih5GxN.jpg" alt="" height="80"></a>
+						<button class="navbar-toggler mobilToggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						  <span class="navbar-toggler-icon mobilMenuIcon"><img src="https://mubc.edu.bd/frontend/ppimsc/image/ic_menu_24px.svg" alt=""></span>
+						</button>
+			
+						<div class="collapse navbar-collapse mobilMenuCollapse" id="navbarSupportedContent">
+							<ul class="navbar-nav mobilNavbar mr-auto">
+															<li class="nav-item dropdown">
+									<a class="nav-link"  href="/"   >
+									Home 									</a>
+																	</li>
+							  								<li class="nav-item dropdown">
+									<a class="nav-link"    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+									About us  <i class="fas fa-chevron-down"></i>									</a>
+																			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+																							<a class="dropdown-item" href="at-a-glance">At a Glance</a>
+																							<a class="dropdown-item" href="history-of-the-college">History of the College</a>
+																							<a class="dropdown-item" href="message-of-the-chairman">Message of The Chairman</a>
+																							<a class="dropdown-item" href="message-of-the-principal">Message of The Principal</a>
+																							<a class="dropdown-item" href="governing-body">Governing Body</a>
+																							<a class="dropdown-item" href="ex-chairman">Ex. Chairman</a>
+																							<a class="dropdown-item" href="ex-principal">Ex. Principal</a>
+																					</div>
+																	</li>
+							  								<li class="nav-item dropdown">
+									<a class="nav-link"    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+									Academic  <i class="fas fa-chevron-down"></i>									</a>
+																			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+																							<a class="dropdown-item" href="a">a</a>
+																							<a class="dropdown-item" href="academic-rules">Academic Rules</a>
+																							<a class="dropdown-item" href="our-teacher">Our Teacher</a>
+																							<a class="dropdown-item" href="our-staff">Our Staff</a>
+																							<a class="dropdown-item" href="attendence-information">Attendence Information</a>
+																					</div>
+																	</li>
+							  								<li class="nav-item dropdown">
+									<a class="nav-link"    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+									Routine  <i class="fas fa-chevron-down"></i>									</a>
+																			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+																							<a class="dropdown-item" href="teacherRoutine">Teacher Routine</a>
+																					</div>
+																	</li>
+							  								<li class="nav-item dropdown">
+									<a class="nav-link"    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+									Admission  <i class="fas fa-chevron-down"></i>									</a>
+																			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+																							<a class="dropdown-item" href="h">How To Apply</a>
+																							<a class="dropdown-item" href="admission-circular">Admission Circular</a>
+																							<a class="dropdown-item" href="admission-result">Admission Result</a>
+																					</div>
+																	</li>
+							  								<li class="nav-item dropdown">
+									<a class="nav-link"    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+									Student  <i class="fas fa-chevron-down"></i>									</a>
+																			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+																							<a class="dropdown-item" href="tution-fess">Tuition Fees</a>
+																							<a class="dropdown-item" href="our-student">Our Student</a>
+																							<a class="dropdown-item" href="mobile-banking">Mobile Banking</a>
+																							<a class="dropdown-item" href="daily-activities">Daily Activities</a>
+																							<a class="dropdown-item" href="exam-shedule">Exam Shedule</a>
+																							<a class="dropdown-item" href="student-uniform">Student Uniform</a>
+																							<a class="dropdown-item" href="examination-system">Examination System</a>
+																							<a class="dropdown-item" href="rules-and-regulation">Rules and Regulation</a>
+																					</div>
+																	</li>
+							  								<li class="nav-item dropdown">
+									<a class="nav-link"    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+									Syllabus  <i class="fas fa-chevron-down"></i>									</a>
+																			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+																							<a class="dropdown-item" href="Bangla-Version">Bangla Version</a>
+																							<a class="dropdown-item" href="English-Version">English Version</a>
+																					</div>
+																	</li>
+							  								<li class="nav-item dropdown">
+									<a class="nav-link"    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+									Facilities  <i class="fas fa-chevron-down"></i>									</a>
+																			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+																							<a class="dropdown-item" href="library">Library</a>
+																							<a class="dropdown-item" href="ict-lab">ICT Lab</a>
+																							<a class="dropdown-item" href="play-ground">Play Ground</a>
+																							<a class="dropdown-item" href="physics-lab">Physics Lab</a>
+																							<a class="dropdown-item" href="chemistry-lab">Chemistry Lab</a>
+																							<a class="dropdown-item" href="biology-lab">Biology Lab</a>
+																							<a class="dropdown-item" href="geography-lab">Geography Lab</a>
+																							<a class="dropdown-item" href="co-curricular-activity">Co-curricular Activity</a>
+																					</div>
+																	</li>
+							  								<li class="nav-item dropdown">
+									<a class="nav-link"    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+									Results  <i class="fas fa-chevron-down"></i>									</a>
+																			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+																							<a class="dropdown-item" href="board-exam-result">Board Exam Result</a>
+																							<a class="dropdown-item" href="pec-result">PEC Result</a>
+																							<a class="dropdown-item" href="jsc-result">JSC Result</a>
+																							<a class="dropdown-item" href="ssc-result">SSC Result</a>
+																							<a class="dropdown-item" href="hsc-result">HSC Result</a>
+																					</div>
+																	</li>
+							  								<li class="nav-item dropdown">
+									<a class="nav-link"    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+									Gallery  <i class="fas fa-chevron-down"></i>									</a>
+																			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+																							<a class="dropdown-item" href="photo-gallery">Photo Gallery</a>
+																							<a class="dropdown-item" href="video-gallary">Video Gallary</a>
+																					</div>
+																	</li>
+							  								<li class="nav-item dropdown">
+									<a class="nav-link"  href="contact"   >
+									Contact 									</a>
+																	</li>
+							  								<li class="nav-item dropdown">
+									<a class="nav-link"  href="notice"   >
+									Notice 									</a>
+																	</li>
+							  								<li class="nav-item dropdown">
+									<a class="nav-link"  href="a"   >
+									Online Admission 									</a>
+																	</li>
+							  							</ul>
+							<div class="navContact">
+								<h4>Contact Info</h4>
+								<span class="navMenuNumber">+88 01769856256</span> <span>info@mail.com</span>
+								<ul>
+									<li><i class="fab fa-facebook-f"></i></li>
+									<li><i class="fab fa-twitter"></i></li>
+									<li><i class="fab fa-instagram"></i></li>
+									<li><i class="fab fa-linkedin-in"></i></li>
+								</ul>
+							</div>
+						  </div>
+					</div>
+				</nav>
+		<!----------------navBar------------->
+</header>    <!-- Slider -->
+    <div style="margin-top: 140px">
+        <section id="banner" style="height: 80vh">
+    <div class="row mx-0 slider">
+		            <div class="col-lg-12 p-0">
+                <div class="banner-slide" >
+                    <img src="https://mubc.edu.bd//media/94/WhatsApp-Image-2024-11-20-at-19.17.36_71804871.jpg" class="-mg-fulid w-100 sliderMobil" alt=""  style="height: 100vh;  object-fit: cover;"
+>			
+                </div>
+            </div>
+                    <div class="col-lg-12 p-0">
+                <div class="banner-slide" >
+                    <img src="https://mubc.edu.bd//media/93/462806173_3784163365191201_778413307806865185_n.jpg" class="-mg-fulid w-100 sliderMobil" alt=""  style="height: 100vh;  object-fit: cover;"
+>			
+                </div>
+            </div>
+                    <div class="col-lg-12 p-0">
+                <div class="banner-slide" >
+                    <img src="https://mubc.edu.bd//media/89/1.jpg" class="-mg-fulid w-100 sliderMobil" alt=""  style="height: 100vh;  object-fit: cover;"
+>			
+                </div>
+            </div>
+                    <div class="col-lg-12 p-0">
+                <div class="banner-slide" >
+                    <img src="https://mubc.edu.bd//media/86/IMG-20220315-WA0006---Copy.jpg" class="-mg-fulid w-100 sliderMobil" alt=""  style="height: 100vh;  object-fit: cover;"
+>			
+                </div>
+            </div>
+                    <div class="col-lg-12 p-0">
+                <div class="banner-slide" >
+                    <img src="https://mubc.edu.bd//media/85/mubc2.png" class="-mg-fulid w-100 sliderMobil" alt=""  style="height: 100vh;  object-fit: cover;"
+>			
+                </div>
+            </div>
+                    <div class="col-lg-12 p-0">
+                <div class="banner-slide" >
+                    <img src="https://mubc.edu.bd//media/84/mubc1.png" class="-mg-fulid w-100 sliderMobil" alt=""  style="height: 100vh;  object-fit: cover;"
+>			
+                </div>
+            </div>
+                    <div class="col-lg-12 p-0">
+                <div class="banner-slide" >
+                    <img src="https://mubc.edu.bd//media/83/mubc.png" class="-mg-fulid w-100 sliderMobil" alt=""  style="height: 100vh;  object-fit: cover;"
+>			
+                </div>
+            </div>
+                    <div class="col-lg-12 p-0">
+                <div class="banner-slide" >
+                    <img src="https://mubc.edu.bd//media/80/IMG-20220315-WA0006---Copy.jpg" class="-mg-fulid w-100 sliderMobil" alt=""  style="height: 100vh;  object-fit: cover;"
+>			
+                </div>
+            </div>
+                    <div class="col-lg-12 p-0">
+                <div class="banner-slide" >
+                    <img src="https://mubc.edu.bd//media/75/TC_39302_d4c28980-0590-4372-b212-66ecc586195e-(1).jpg" class="-mg-fulid w-100 sliderMobil" alt=""  style="height: 100vh;  object-fit: cover;"
+>			
+                </div>
+            </div>
+            </div>
+</section>
+<!-- Slider -->
+    </div>
+  
+    <!-- Slider -->
+    <style>
+       .gallery-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(128, 128, 128, 0.068);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 20px;
+    animation: marquee 20s linear infinite; /* Adjust timing */
+    will-change: transform; /* Optimize performance */
+}
+
+.image-gallery img {
+    width: 280px;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes  marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+    </style>
+
+
+
+
+    <section id="latestNews">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="latestNews">
+                        <p>Latest Update</p>
+                    </div>
+                    <div class="scrollNews">
+                        <marquee class="col-xs-10 scroll-title" behavior="" direction="" onmouseover="this.stop();"
+                            onmouseout="this.start();">
+                                                            <a href="https://mubc.edu.bd/notice/esessi-preeksharthee-2025-bzacer-bisesh-klaser-jnz-bijngpti">এসএসসি পরীক্ষার্থী ২০২৫ ব্যাচের বিশেষ ক্লাসের জন্য বিজ্ঞপ্তি ||</a>
+                                                            <a href="https://mubc.edu.bd/notice/esessi-2025-er-prthm-mdel-tester-smysuuci">এসএসসি ২০২৫ এর প্রথম মডেল টেস্টের  সময়সূচি ||</a>
+                                                            <a href="https://mubc.edu.bd/notice/aidi-kard-sngkrant-notis-2025">আইডি কার্ড সংক্রান্ত নোটিশ -২০২৫ ||</a>
+                                                            <a href="https://mubc.edu.bd/notice/notis-siksha-sfr-2025">নোটিশ শিক্ষা সফর -২০২৫ ||</a>
+                                                            <a href="https://mubc.edu.bd/notice/2025-sikshabrshe-bangla-oo-ingreji-varsne-prthm-theke-nbm-sreneer-vrti-bijngpti">২০২৫ শিক্ষাবর্ষে বাংলা ও ইংরেজি ভার্সনে প্রথম থেকে নবম শ্রেনীর ভর্তি-বিজ্ঞপ্তি ||</a>
+                                                            <a href="https://mubc.edu.bd/notice/online-admission">Addmision Notice ||</a>
+                                                    </marquee>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gbSection">
+        <div class="container">
+            <div class="row">
+                                    <div class="col-md-6 text-center">
+                        <div class="gbMain">
+                            <div class="gbImage">
+                                <img src="https://mubc.edu.bd//media/140/WhatsApp-Image-2025-05-17-at-18.21.24_d02de54d.jpg" class="d-block w-100" alt="">
+                                <div class="gbName">
+                                    <p>জনাব অধ্যাপক  তাহমিনা আখতার</p>
+                                    <h5>অধ্যাপক, সমাজকল্যাণ ও গবেষণা ইন্সটিটিউট, ঢাকা বিশ্ববিদ্যালয়</h5>
+                                </div>
+                            </div>
+                            <div class="gbIText">
+                                <div class="gbspeecs">
+                                    <div><p><strong>সভাপতির বাণী</strong></p><p><strong>বিসমিল্লাহহির রাহমানির রাহীম।</strong></p><p>&nbsp;</p><p><strong>প্রিয় শিক্ষার্থী, অভিভাবক, শিক্ষকবৃন্দ, এবং শুভানুধ্যায়ীগণ,</strong></p><p>&nbsp;</p><p><strong>সবাইকে সশ্রদ্ধ সালাম। শিক্ষা জাতীয় উন্নয়নের মূল চাবিকাঠি। পৃথিবীতে যে জাতি যত বেশি শিক্ষিত, সে জাতি তত বেশি উন্নত। দেশের জনশক্তিকে জনসম্পদে রুপান্তরিত এবং জ্ঞানভিত্তিক সমাজ ও রাষ্ট্র বির্নিমাণে এক মাত্র হাতিয়ার হচ্ছে শিক্ষা। শিক্ষাবিদ B.Rasel বলেন “Education is the harmonious development of body and soul”&nbsp;অর্থাৎ শিক্ষা হচ্ছে শরীর , মন ও আত্নার সুসামঞ্জস্যর্পূণ উন্নয়ন। মানুষকে মানুষ হয়ে উঠার পথে শিক্ষার বিকল্প আজও কিছু আবিষ্কৃত হয়নি। আবিস্কৃত, কৃত্রিম বুদ্ধিমত্তার তৈরী রোবট মানুষের প্রয়োজন মেটাবে, কাজ করে দিবে; কিন্তু হবে না বিকল্প মানুষ। কারণ মানুষ বুদ্ধিভিত্তিক প্রাণী, বুদ্ধির সকল উপাদান , আচার-অনুষ্ঠান, ক্রিয়া কলাপ, মানবিক মূল্যবোধ বিকাশের মাধ্যমে নিজেদেরকে অন্য প্রাণীজগত থেকে স্বাতন্ত্র্যতা সৃষ্টি করেছে।</strong></p><ul><li><strong>১৯৬৯ সালে প্রতিষ্ঠিত মনিপুর উচ্চ বিদ্যালয় ও কলেজ বাংলাদেশের শিক্ষার ক্ষেত্রে অনবদ্য ভূমিকা রেখে চলেছে। শিক্ষকমন্ডলীর ঐকান্তিক প্রচেষ্টা, অভিভাবকদের সহযোগিতা এবং শিক্ষার্থীদের জ্ঞান অন্বেষণের মানসিকতাই পারে কেবলমাত্র এই প্রতিষ্ঠানকে শ্রেষ্ঠ শীর্ষস্থানীয় শিখরে পৌছে দিতে। আমি আশা করি এই প্রতিষ্ঠানের সাথে জড়িত সকল শিক্ষক শিক্ষিকা, ছাত্রছাত্রী, অভিভাবক, কর্মকর্তা ও কর্মচারীদের ঐকান্তিক প্রচেষ্টা এবং আন্তরিক সহযোগিতার মাধ্যমে শ্রেষ্ঠ শিক্ষা প্রতিষ্ঠানে রূপান্তর করবে এবং মানবিক মর্যাদাশীল ও শিক্ষিত মানবসম্পদ গঠনে অনন্য ভূমিকা রাখবে।</strong></li></ul><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
+                                </div>
+                                <a href="https://mubc.edu.bd/message-of-the-chairman">Read More <img
+                                        src="https://mubc.edu.bd/frontend/ppimsc/image/schoolLogo/ic_arrow_back_18px.svg"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-md-6 text-center">
+                        <div class="gbMain">
+                            <div class="gbImage">
+                                <img src="https://mubc.edu.bd//media/88/Head-sir.jpg" class="d-block w-100" alt="">
+                                <div class="gbName">
+                                    <p>আখলাক আহম্মদ</p>
+                                    <h5>প্রধান শিক্ষক (ভারপ্রাপ্ত)</h5>
+                                </div>
+                            </div>
+                            <div class="gbIText">
+                                <div class="gbspeecs">
+                                    <div><p>প্রধান শিক্ষকের বাণী</p><p>মনিপুর উচ্চ বিদ্যালয় ও কলেজ</p><p>&nbsp;</p><p>প্রিয় শিক্ষার্থী, অভিভাবক, শিক্ষক, এবং শুভানুধ্যায়ীগণ,</p><p>আপনাদের প্রতি আন্তরিক শুভেচ্ছা ও অভিনন্দন জানিয়ে শুরু করছি। মনিপুর উচ্চ বিদ্যালয় ও কলেজ দীর্ঘদিন ধরে শিক্ষার ক্ষেত্রে উৎকর্ষ সাধনের একটি উদাহরণ হয়ে দাঁড়িয়েছে। আমাদের মূল লক্ষ্য হলো এমন একটি শিক্ষা পরিবেশ সৃষ্টি করা, যেখানে শিক্ষার্থীরা জ্ঞান, নৈতিকতা এবং সৃজনশীলতার সমন্বয়ে ভবিষ্যৎ নির্মাণে সক্ষম হবে।আমাদের বিশ্বাস, শিক্ষা শুধু পরীক্ষার ফলাফলের মধ্যেই সীমাবদ্ধ নয়। এটি একটি জীবনব্যাপী প্রক্রিয়া, যা একজন শিক্ষার্থীকে সঠিক পথে পরিচালিত করে এবং ব্যক্তিগত ও সামাজিক দায়িত্ব পালনে উদ্বুদ্ধ করে। আমরা গর্বিত যে, আমাদের শিক্ষক ও অভিভাবকগণ একযোগে কাজ করে শিক্ষার্থীদের জন্য এই সম্ভাবনাময় পরিবেশ নিশ্চিত করছেন।</p><p>&nbsp;</p><p>আমাদের অঙ্গীকার হলো:</p><p>শিক্ষার্থীদের মেধা ও মননশীলতার বিকাশ ঘটানো।</p><p>প্রযুক্তি, বিজ্ঞান, এবং আধুনিক শিক্ষাদানের মাধ্যমে যুগোপযোগী জ্ঞান প্রদান করা।</p><p>নৈতিকতা, শৃঙ্খলা, এবং মানবিক মূল্যবোধ জাগ্রত করা।</p><p>সহশিক্ষা কার্যক্রমের মাধ্যমে শিক্ষার্থীদের সৃজনশীলতা এবং নেতৃত্বের দক্ষতা বিকশিত করা।</p><p>আমি দৃঢ়ভাবে বিশ্বাস করি যে, আমাদের সকলের একত্রিত প্রচেষ্টা ও ঐকান্তিক নিষ্ঠার মাধ্যমে আমরা মনিপুর উচ্চ বিদ্যালয় ও কলেজকে আরও উচ্চতর শিখরে নিয়ে যেতে সক্ষম হব।</p><p>আপনাদের সকলের সহযোগিতা ও প্রেরণা আমাদের চলার পথে অনুপ্রেরণা। আমাদের প্রতিষ্ঠানকে আরও সমৃদ্ধ করার জন্য আপনাদের মূল্যবান মতামত সবসময়ই স্বাগত।</p><p>&nbsp;</p><p>ধন্যবাদান্তে<br>প্রধান শিক্ষক (ভারপ্রাপ্ত)</p><p>মনিপুর উচ্চ বিদ্যালয় ও কলেজ</p></div>
+                                </div>
+                                <a href="https://mubc.edu.bd/message-of-the-principal">Read More <img
+                                        src="https://mubc.edu.bd/frontend/ppimsc/image/schoolLogo/ic_arrow_back_18px.svg"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </section>
+
+    <section style="display: flex; justify-content: center; padding: 50px 0px;">
+        <div class="col-lg-9 text-center gallery-container">
+            <div class="image-gallery">
+                                                            <img src="https://mubc.edu.bd/media/album/0ebd0155-1443-4595-8c72-ab9e2a7c02ec.jpg" alt="Image 1">
+                                            <img src="https://mubc.edu.bd/media/album/1efa2881-fb19-4703-9e74-1570e611391f.jpg" alt="Image 1">
+                                            <img src="https://mubc.edu.bd/media/album/7c87bf2c-c06e-49bc-b197-b972f97fa487.jpg" alt="Image 1">
+                                            <img src="https://mubc.edu.bd/media/album/3143ee5e-aaab-43fe-9b49-b5aeaa09246f.jpg" alt="Image 1">
+                                            <img src="https://mubc.edu.bd/media/album/db05d49f-aa01-43e1-89c3-a6f4b4051816.jpg" alt="Image 1">
+                                            <img src="https://mubc.edu.bd/media/album/b01fe238-7e24-4486-b272-68b93c99fc19.jpg" alt="Image 1">
+                                            <img src="https://mubc.edu.bd/media/album/Screenshot_1.png" alt="Image 1">
+                                    
+                            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="home-notice">
+        <div class="container home-notice-box">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="home-notice-img"></div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="home-notice-content">
+                        <marquee behavior="" direction="up" scrollamount="2">
+                            <ul>
+                                                                    <li>
+                                        <a href="https://mubc.edu.bd/notice/pbitr-rmjan-oo-idul-fitr-er-tinti-notis">
+                                            <div class="home-notice-year-box">
+                                                <span
+                                                    class="home-notice-content-month">27</span>
+                                                <span
+                                                    class="home-notice-content-date">Feb</span>
+                                            </div>
+                                            <div class="home-notice-content-details">
+                                                <p>পবিত্র রমজান ও ইদুল ফিতর এর তিনটি নোটিশ</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://mubc.edu.bd/notice/esessi-2025-er-prthm-mdel-tester-smysuuci">
+                                            <div class="home-notice-year-box">
+                                                <span
+                                                    class="home-notice-content-month">20</span>
+                                                <span
+                                                    class="home-notice-content-date">Jan</span>
+                                            </div>
+                                            <div class="home-notice-content-details">
+                                                <p>এসএসসি ২০২৫ এর প্রথম মডেল টেস্টের  সময়সূচি</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://mubc.edu.bd/notice/esessi-preeksharthee-2025-bzacer-bisesh-klaser-jnz-bijngpti">
+                                            <div class="home-notice-year-box">
+                                                <span
+                                                    class="home-notice-content-month">20</span>
+                                                <span
+                                                    class="home-notice-content-date">Jan</span>
+                                            </div>
+                                            <div class="home-notice-content-details">
+                                                <p>এসএসসি পরীক্ষার্থী ২০২৫ ব্যাচের বিশেষ ক্লাসের জন্য বিজ্ঞপ্তি</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://mubc.edu.bd/notice/aidi-kard-sngkrant-notis-2025">
+                                            <div class="home-notice-year-box">
+                                                <span
+                                                    class="home-notice-content-month">15</span>
+                                                <span
+                                                    class="home-notice-content-date">Jan</span>
+                                            </div>
+                                            <div class="home-notice-content-details">
+                                                <p>আইডি কার্ড সংক্রান্ত নোটিশ -২০২৫</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://mubc.edu.bd/notice/notis-siksha-sfr-2025">
+                                            <div class="home-notice-year-box">
+                                                <span
+                                                    class="home-notice-content-month">14</span>
+                                                <span
+                                                    class="home-notice-content-date">Jan</span>
+                                            </div>
+                                            <div class="home-notice-content-details">
+                                                <p>নোটিশ শিক্ষা সফর -২০২৫</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://mubc.edu.bd/notice/2025-sikshabrshe-bangla-oo-ingreji-varsne-prthm-theke-nbm-sreneer-vrti-bijngpti">
+                                            <div class="home-notice-year-box">
+                                                <span
+                                                    class="home-notice-content-month">19</span>
+                                                <span
+                                                    class="home-notice-content-date">Nov</span>
+                                            </div>
+                                            <div class="home-notice-content-details">
+                                                <p>২০২৫ শিক্ষাবর্ষে বাংলা ও ইংরেজি ভার্সনে প্রথম থেকে নবম শ্রেনীর ভর্তি-বিজ্ঞপ্তি</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://mubc.edu.bd/notice/online-admission">
+                                            <div class="home-notice-year-box">
+                                                <span
+                                                    class="home-notice-content-month">19</span>
+                                                <span
+                                                    class="home-notice-content-date">Nov</span>
+                                            </div>
+                                            <div class="home-notice-content-details">
+                                                <p>online Admission</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                                            </ul>
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <section class="branch-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="branchhead text-center ">
+                        <h2>Our Branch</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="branch">
+                        <img src="https://mubc.edu.bd/frontend/ppimsc/image/branch/1.jpg" alt="">
+                        <div class="branchtext">
+                            <div class="campusname">
+                                <p>Monipur Uchcha Vidyalaya and College</p>
+                            </div>
+                            <div class="college collegebranch text-center">
+                                <h4>Branch</h4>
+                                <h5>01</h5>
+                            </div>
+                            <div class="addressdetailsmubc">
+                                <div class="addresscampus">
+                                    <p>Rupnagar R/A - Mirpur , Dhaka Bangladesh</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="branch">
+                        <img src="https://mubc.edu.bd/frontend/ppimsc/image/branch/2.jpg" alt="">
+                        <div class="branchtext">
+                            <div class="campusname">
+                                <p>Monipur Uchcha Vidyalaya and College</p>
+                            </div>
+                            <div class="college collegebranch text-center">
+                                <h4>Branch</h4>
+                                <h5>02</h5>
+                            </div>
+                            <div class="addressdetailsmubc">
+                                <div class="addresscampus">
+                                    <p>lbrahimpur, Mirpur, Dhaka</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="branch">
+                        <img src="https://mubc.edu.bd/frontend/ppimsc/image/branch/3.jpg" alt="">
+                        <div class="branchtext">
+                            <div class="campusname">
+                                <p>Monipur Uchcha Vidyalaya and College</p>
+                            </div>
+                            <div class="college collegebranch text-center">
+                                <h4>Branch</h4>
+                                <h5>03</h5>
+                            </div>
+                            <div class="addressdetailsmubc">
+                                <div class="addresscampus">
+                                    <p>Begum Rokeya Sarani, Sheorapara, Dhaka-1206</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="branch">
+                        <img src="https://mubc.edu.bd/frontend/ppimsc/image/branch/4.jpg" alt="">
+                        <div class="branchtext">
+                            <div class="campusname">
+                                <p>Monipur Uchcha Vidyalaya and College</p>
+                            </div>
+                            <div class="college collegebranch text-center">
+                                <h4>Main</h4>
+                                <h5>Girls</h5>
+                            </div>
+                            <div class="addressdetailsmubc">
+                                <div class="addresscampus">
+                                    <p>Monipur, Mirpur-2, Dhaka, Bangladesh</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="branch">
+                        <img src="https://mubc.edu.bd/frontend/ppimsc/image/branch/5.jpg" alt="">
+                        <div class="branchtext">
+                            <div class="campusname">
+                                <p>Monipur Uchcha Vidyalaya and College</p>
+                            </div>
+                            <div class="college collegebranch text-center">
+                                <h4>Main</h4>
+                                <h5>Boyes</h5>
+                            </div>
+                            <div class="addressdetailsmubc">
+                                <div class="addresscampus">
+                                    <p>60 Feet road , Mirpur-2, Dhaka, Bangladesh</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="branch">
+                        <img src="https://mubc.edu.bd/frontend/ppimsc/image/branch/6.jpg" alt="">
+                        <div class="branchtext">
+                            <div class="campusname">
+                                <p>Monipur Uchcha Vidyalaya and College</p>
+                            </div>
+                            <div class="college collegebranch text-center">
+                                <h4>College</h4>
+                            </div>
+                            <div class="addressdetailsmubc">
+                                <div class="addresscampus">
+                                    <p>Road No. 10 & Road No. 11, Rupnagar Rd, Dhaka 1216</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--------------bekash part-------------------->
+
+    <!-------Know Part--------->
+   <section id="knowSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="knowHeader">
+                        <p>YOU CAN KNOW</p>
+                        <h3>By Our Digital Documents</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                                   <div class="col-lg-4">
+                        <div class="knowIteam" style="height: 270px">
+                            <div class="videoGallaryImage ">
+                                <img src="https://mubc.edu.bd//media/96/Capture.PNG" alt=""
+                                    class="d-block w-100 h-100">
+                                <div class="playbutton text-center">
+                                    <a class="venobox vbox-item" data-autoplay="true" data-vbtype="video"
+                                        href="https://youtu.be/hoiEdfVq5vY">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="65"
+                                            height="65" fill="none">
+                                            <!-- Circle -->
+                                            <circle cx="50" cy="50" r="48" stroke="#000" stroke-width="4"
+                                                fill="#f0f0f0" />
+                                            <!-- Triangle (Play Icon) -->
+                                            <polygon points="40,30 40,70 70,50" fill="#000" />
+                                        </svg>
+
+                                    </a>
+                                </div>
+                            </div>
+
+                            <h3>Video</h3>
+                            <h4>Our latest Video</h4>
+                            <a href="/video-gallary" target="_blank">View Details</a>
+                        </div>
+                    </div>
+                
+                                    <div class="col-lg-4">
+                        <div class="knowIteam">
+                            <div class="knowIcon">
+                                <a href="/video-gallary" target="_blank">
+                                    <img src="https://mubc.edu.bd//media/12/youtubicon.svg" alt="">
+                                </a>
+                            </div>
+                            <h3>YouTube</h3>
+                            <h4>Educational Channel</h4>
+                            <a href="/video-gallary" target="_blank">View Details <img
+                                    src="https://mubc.edu.bd/frontend/ppimsc/image/schoolLogo/ic_arrow_back_18px.svg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4">
+                        <div class="knowIteam">
+                            <div class="knowIcon">
+                                <a href="https://www.facebook.com/people/Monipur-Uchcha-Vidyalaya-College/100064901342101/?mibextid=ZbWKwL" target="_blank">
+                                    <img src="https://mubc.edu.bd//media/56/icons8-facebook.svg" alt="">
+                                </a>
+                            </div>
+                            <h3>Facebook</h3>
+                            <h4>Institution Details</h4>
+                            <a href="https://www.facebook.com/people/Monipur-Uchcha-Vidyalaya-College/100064901342101/?mibextid=ZbWKwL" target="_blank">View Details <img
+                                    src="https://mubc.edu.bd/frontend/ppimsc/image/schoolLogo/ic_arrow_back_18px.svg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </section>
+
+
+
+    <!-------------footer------------------->
+    <style>
+    ul li {
+        margin: 0;
+        padding: 0;
+        display: block;
+        list-style: none;
+    }
+
+    .quick-view ul li a {
+        color: #fff;
+    }
+
+    .facebook ul li a {
+        color: #fff;
+    }
+</style>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="upfooter">
+                    <ul>
+
+                        <li><img src="https://mubc.edu.bd/frontend/ppimsc/image/mail.png" alt=""> <span>Get
+                                Appointment</span> </li>
+                        <li><img src="https://mubc.edu.bd/frontend/ppimsc/image/placeholder.png" alt="">
+                            <span>Contact Us Today</span> </li>
+                        <li><img src="https://mubc.edu.bd/frontend/ppimsc/image/paper-plane.png" alt=""> <span>Take
+                                a School Tour</span> </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="row mt-4 m-footer">
+            <div class="col-md-12">
+                <div class="footer-content">
+                    <div style="background-color: rgba(128, 128, 128, 0.4);padding:7px;border-radius: 3px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.062340548294!2d90.37236137516508!3d23.794887378640052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7332d95e565%3A0x996a6f1d555346d5!2sMonipur%20High%20School%20And%20College%20Branch%20-%2003!5e1!3m2!1sen!2sbd!4v1731560103646!5m2!1sen!2sbd"
+                            width="250px" height="130px" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="footer-inner-content">
+                        <div class="quick-view">
+                            <h5>Services</h5>
+                            <ul>
+                                <li>Admission</li>
+                                <li>Result</li>
+                                <li>Online Admission</li>
+                                <li>Fees Payment</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-inner-content">
+                        <div class="quick-view">
+                            <h5>Contact Info</h5>
+                            <ul>
+                                <li><a href=""> Monipur, Mirpur-2, Dhaka, Bangladesh,</a></li>
+                                <li><a href="tel:">Phone:
+                                        ,</a></li>
+                                <li><a href="mailto:monipur1969@yahoo.com">Email:
+                                        monipur1969@yahoo.com</a></li>
+                                <p style="color: #fff;margin-top: 4px;margin-bottom: 7px; font-weight: bold;">Working
+                                    ours</p>
+                                <li>Week Days: 7 AM - 5 PM</li>
+                                <li>Friday : Close</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-inner-content">
+                        <div class="quick-view">
+                            <h5>Visitor Counter</h5>
+                            <div class="">
+                                <ul>
+                                    <!-- <li class="list-group-item"><i class="fa fa-laptop" aria-hidden="true"> </i> Now Online Visitors : <b>11</b> </li> -->
+                                    <li><i class="fa fa-desktop" aria-hidden="true"> </i> Today Total Visitors :
+                                        <b>24</b> </li>
+                                    <!-- <li><i class="fa fa-arrow-circle-o-left" aria-hidden="true"> </i> Yesterday Total Visitors : <b>542</b> </li> -->
+                                    <!-- <li><i class="fa  fa-users" aria-hidden="true"> </i> Weekly Total Visitors : <b>13</b> </li> -->
+                                    <!-- <li><i class="fa  fa-users" aria-hidden="true"> </i> Monthly Total Visitors : <b>2979</b> </li> -->
+                                    <li><i class="fa fa-users" aria-hidden="true"> </i> Grand Total From 30 Jun 2021 :
+                                        <b>135457</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-12 text-center">
+                <div class="facebook">
+                    <div class="single_footer_widget">
+                        <ul class="footer_widget_nav">
+                                                            <li><a href="https://www.facebook.com/people/Monipur-Uchcha-Vidyalaya-College/100064901342101/?mibextid=ZbWKwL" target="_blank"><i
+                                            class="fa fa-facebook"></i></a></li>
+                                                                                                                                                                    </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© Copyright 2025, All Rights Reserved<br>Powered by ODHYYON, A product of <a href="https://addiesoft.com/">ADDIE Soft Ltd</a>.</p><p>Maintenance by MUBC IT Section</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!---------footer------------------>
+
+
+
+<!-- To Top -->
+<a id="totop" href="#top"><i class="tm-acadevo-icon-angle-up"></i></a>
+
+
+
+
+<!-- JS, Popper.js, and jQuery -->
+
+<script  src="https://mubc.edu.bd/frontend/ppimsc/js/jquery-1.12.4.min.js"></script>
+<script  src="https://mubc.edu.bd/frontend/ppimsc/js/bootstrap.min.js"></script>
+<script  src="https://mubc.edu.bd/frontend/ppimsc/js/slick.min.js"></script>
+<script src="https://kit.fontawesome.com/dedaf8eeba.js" crossorigin="anonymous"></script>
+<script  src="https://mubc.edu.bd/frontend/ppimsc/js/venobox.min.js"></script>
+<script  src="https://mubc.edu.bd/frontend/ppimsc/js/wow.min.js"></script>
+<script  src="https://mubc.edu.bd/frontend/ppimsc/js/custom.js"></script>
+
+<script>
+	$( document ).ready(function() {
+	
+	// Loop through each nav item
+	$('nav.navbar').children('ul.nav').children('li').each(function(indexCount){
+		
+		// loop through each dropdown, count children and apply a animation delay based on their index value
+		$(this).children('ul.dropdown').children('li').each(function(index){
+			
+			// Turn the index value into a reasonable animation delay
+				var delay = 0.1 + index*0.03;
+				
+				// Apply the animation delay
+				$(this).css("animation-delay", delay + "s")			
+			});
+		});
+	});
+</script>
+
+
+</body>
+
+</html>
